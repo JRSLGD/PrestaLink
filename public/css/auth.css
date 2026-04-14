@@ -1,0 +1,45 @@
+/* =============================================
+   PrestaLink — Styles page Auth
+   Connexion / Inscription
+   ============================================= */
+
+/* Champ de saisie au focus */
+.input-field {
+    background: #F8FAFF;
+    transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.input-field:focus {
+    background: #ffffff;
+}
+
+/* Onglets */
+.tab-btn {
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* Sélecteur type de compte */
+.account-type-label input:checked + div {
+    border-color: #1B4FD8;
+    background: #EFF4FF;
+    color: #1B4FD8;
+}
+
+/* Barres force mot de passe */
+.strength-bar { transition: background .3s ease; }
+
+#navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.85);
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.25;
+  pointer-events: none;
+}

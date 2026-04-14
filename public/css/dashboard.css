@@ -1,0 +1,63 @@
+/* =============================================
+   PrestaLink — Styles Dashboard
+   Client + Prestataire + Both
+   ============================================= */
+
+/* Scrollbar sidebar discrète */
+aside::-webkit-scrollbar        { width: 4px; }
+aside::-webkit-scrollbar-track  { background: transparent; }
+aside::-webkit-scrollbar-thumb  { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+/* Input fields */
+.input-field {
+    background: #F8FAFF;
+    transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.input-field:focus { background: #ffffff; }
+
+/* Cartes stat — animation entrée */
+.stat-card {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .4s ease, transform .4s ease, box-shadow .2s ease;
+}
+.stat-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.stat-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Ligne tableau hover */
+tr.hover\:bg-surface:hover td { background: #F8FAFF; }
+
+/* Boutons toggle switch */
+input[type="checkbox"].sr-only + div {
+    transition: background .2s;
+}
+
+/* Chat body scroll */
+#chat-body { scroll-behavior: smooth; }
+
+/* Message bubble */
+.bubble-in  { border-bottom-left-radius:  4px !important; }
+.bubble-out { border-bottom-right-radius: 4px !important; }
+
+/* Filtre bouton actif */
+.filtre-btn.actif {
+    background: #1B4FD8;
+    color: white;
+    border-color: #1B4FD8;
+}
+
+/* Barre de progression revenus */
+.progress-bar { transition: width .8s cubic-bezier(.4,0,.2,1); }
+
+/* Cercle SVG objectif */
+circle[stroke-dasharray] {
+    transition: stroke-dasharray .8s cubic-bezier(.4,0,.2,1);
+}
+
+/* Prestation card toggle */
+.prestation-card label input:checked ~ .toggle-dot { transform: translateX(16px); }

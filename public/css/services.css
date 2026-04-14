@@ -1,0 +1,23 @@
+/* =============================================
+   PrestaLink — Styles Services
+   ============================================= */
+
+/* Carte prestation */
+.prestation-card {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.prestation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(27,79,216,0.10);
+}
+
+/* Bouton catégorie actif */
+.cat-btn.actif {
+    background: #1B4FD8 !important;
+    color: white !important;
+    font-weight: 500;
+}
+
+/* Étoiles notation commande */
+.star-btn { filter: grayscale(1); transition: filter .15s; }
+.star-btn.active { filter: grayscale(0); }
